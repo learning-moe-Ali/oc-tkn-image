@@ -1,5 +1,5 @@
 FROM openshift4/ose-cli
-COPY ./tkn.tar /tmp/
-RUN tar xzf /tmp/tkn.tar
-RUN ls /tmp
-RUN mv /tmp/tkn /usr/bin
+COPY ./tkn.tar ./
+RUN tar xzf .//tkn.tar
+RUN ls ./
+RUN mv ./tkn /usr/bin
