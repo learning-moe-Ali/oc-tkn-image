@@ -1,4 +1,5 @@
-FROM openshift4/ose-cli
+FROM  registry.redhat.io/openshift4/ose-cli
+RUN oc get pods
 COPY ./tkn.tar ./
 RUN tar xzf .//tkn.tar
 RUN ls ./
